@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--egcholyisland/-->
+	<DataObject Name="egcholyisland" Type="Mod" Id="12367057881720487468" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">3854623847958366191</DataValue>
+			<!--egcholyisland/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="3854623847958366191" OwnerId="12367057881720487468">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="3691540106"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="239494996"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2305032710"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1194833053"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">7786377256458482953</DataValue>
+			<!--egcholyisland/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="7786377256458482953" OwnerId="12367057881720487468">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="3691540106"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="239494996"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2305032710"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1194833053"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

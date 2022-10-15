@@ -1,0 +1,491 @@
+<instance description="" template="map_gen\map_gen_layout">
+	<uniqueid name="pbgid" value="1" />
+	<group name="map_gen_layout">
+		<locstring name="display_name" value="3" mod="89640206b49d47378a6e08dc5467460e" />
+		<list name="weighted_terrain_types">
+			<group name="weighted_terrain_type">
+				<float name="weight" value="75" />
+				<instance_reference name="terrain_type" value="map_gen\map_gen_terrain_type\basic_elevation\tt_plains" />
+				<bool name="is_unplayable_area_terrain" value="False" />
+			</group>
+		</list>
+		<file name="terrain_layout_script" value="egcholyisland" />
+		<instance_reference name="global_distributions" value="" />
+		<group name="camera_mesh_params">
+			<float name="smoothing_radius_flat" value="40" />
+			<float name="pick_max_height_in_radius" value="5" />
+			<float name="smoothing_radius_slopes" value="10" />
+			<float name="transition_to_slope_smoothing_start_degrees" value="20" />
+			<float name="transition_to_slope_smoothing_end_degrees" value="65" />
+		</group>
+		<bool name="reflect_loaded_layout_across_horizontal_axis" value="True" />
+		<instance_reference name="river_default" value="map_gen\river\river_map" />
+		<group name="ui">
+			<file name="image_lobby_flavor" value="map_gen_biome\desert_eastern_lobby_flavor" />
+			<file name="image_loading_background" value="" />
+			<file name="image_unloading_background" value="" />
+			<file name="image_postgame_background" value="" />
+			<list name="display_notes">
+				<locstring name="note" value="5" mod="89640206b49d47378a6e08dc5467460e" />
+			</list>
+			<locstring name="display_description_long" value="5" mod="89640206b49d47378a6e08dc5467460e" />
+			<file name="image_icon" value="map_gen_layout\archipelago_icon" />
+			<list name="characteristics">
+				<instance_reference name="characteristic" value="map_gen\map_gen_ui_characteristic\naval" />
+				<instance_reference name="characteristic" value="map_gen\map_gen_ui_characteristic\more_food" />
+			</list>
+		</group>
+		<enum_table name="balancing_resource_score_maps">
+			<group name="none">
+				<template_reference name="score_map" value="map_gen\score_map\option\all_0">
+				</template_reference>
+			</group>
+			<group name="gold">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="stone">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="relics">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="settlements">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="berries">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\land_away_from_water_and_impasse" />
+				</template_reference>
+			</group>
+			<group name="holy_sites">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="berries_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="gold_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="stone_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement" />
+				</template_reference>
+			</group>
+			<group name="sheep_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_close" />
+				</template_reference>
+			</group>
+			<group name="sheep_med">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_close" />
+				</template_reference>
+			</group>
+			<group name="sheep_large">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_close" />
+				</template_reference>
+			</group>
+			<group name="deer_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_close" />
+				</template_reference>
+			</group>
+			<group name="deer_large">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_inland_far" />
+				</template_reference>
+			</group>
+			<group name="boar_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\land_away_from_water_and_impasse" />
+				</template_reference>
+			</group>
+			<group name="boar_large">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_close" />
+				</template_reference>
+			</group>
+			<group name="fish_deepwater">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="" />
+				</template_reference>
+			</group>
+			<group name="settlements_naval">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="" />
+				</template_reference>
+			</group>
+			<group name="fish_shore">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\water\reachable_shoreline_starting_fish" />
+				</template_reference>
+			</group>
+			<group name="fish_river">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="map_gen\score_map\score_map\water\basic_water_river_fish" />
+				</template_reference>
+			</group>
+			<group name="forests_large">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="" />
+				</template_reference>
+			</group>
+			<group name="forests_small">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="" />
+				</template_reference>
+			</group>
+			<group name="forests_stealth">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="" />
+				</template_reference>
+			</group>
+			<group name="fish_deepwater_offshore">
+				<template_reference name="score_map" value="map_gen\score_map\option\reference">
+					<instance_reference name="score_map" value="" />
+				</template_reference>
+			</group>
+		</enum_table>
+		<list name="river_override">
+		</list>
+		<enum_table name="mesh_area_properties">
+			<group name="none">
+				<instance_reference name="properties" value="" />
+			</group>
+			<group name="dense_woods">
+				<instance_reference name="properties" value="mesh_area_properties\standard_dense_woods" />
+			</group>
+			<group name="stealth_woods">
+				<instance_reference name="properties" value="mesh_area_properties\standard_stealth_woods" />
+			</group>
+			<group name="ocean_stealth">
+				<instance_reference name="properties" value="mesh_area_properties\standard_ocean_stealth" />
+			</group>
+		</enum_table>
+		<group name="oceans">
+			<float name="ocean_height" value="5" />
+		</group>
+		<group name="erosion">
+			<float name="droplets_per_cell" value="0.85" />
+			<float name="erosion_rate" value="0.5" />
+			<float name="deposit_rate" value="0.06" />
+			<float name="friction" value="0.15" />
+			<float name="velocity_erosion_strength" value="3" />
+			<float name="max_erosion_depth" value="1.2" />
+			<float name="iteration_strength_increase" value="0.04" />
+			<float name="sample_offset_radius" value="0.75" />
+			<int name="max_droplet_iterations" value="100" />
+			<int name="erosion_magnification" value="2" />
+			<float name="end_droplets_below_velocity" value="0.75" />
+			<int name="steps_before_velocity_checks_start" value="3" />
+		</group>
+		<list name="default_biome_tuning_overrides">
+		</list>
+		<list name="default_map_size_tuning_overrides">
+			<group name="map_size_overrides">
+				<template_reference name="map_size_resource_balancing" value="map_gen\map_gen_layout_and_size_params">
+					<instance_reference name="distribution_balancing_list" value="map_gen\distribution\distribution_balancing_list\default_resources_list" />
+					<enum_table name="distribution_balancing">
+						<group name="berries">
+							<list name="accessible_spawns">
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.5" />
+									<float name="accessible_range_max" value="0.5" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.45" />
+									<float name="accessible_range_max" value="0.45" />
+								</group>
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="55" />
+							<float name="avoid_any_spawn_distance" value="12" />
+							<float name="contested_range_min" value="0" />
+							<float name="contested_range_max" value="0" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="4" />
+						</group>
+						<group name="holy_sites">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="0" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="0" />
+						</group>
+						<group name="gold_small">
+							<list name="accessible_spawns">
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.61" />
+									<float name="accessible_range_max" value="0.61" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.61" />
+									<float name="accessible_range_max" value="0.61" />
+								</group>
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="105" />
+							<float name="avoid_any_spawn_distance" value="25" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="4" />
+						</group>
+						<group name="stone">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="2" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="165" />
+							<float name="avoid_any_spawn_distance" value="35" />
+							<float name="contested_range_min" value="0.5" />
+							<float name="contested_range_max" value="0.5" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="2" />
+						</group>
+						<group name="stone_small">
+							<list name="accessible_spawns">
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.35" />
+									<float name="accessible_range_max" value="0.35" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.59" />
+									<float name="accessible_range_max" value="0.59" />
+								</group>
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="55" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="4" />
+						</group>
+						<group name="gold">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="2" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="105" />
+							<float name="avoid_any_spawn_distance" value="25" />
+							<float name="contested_range_min" value="0.5" />
+							<float name="contested_range_max" value="0.5" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="7" />
+						</group>
+						<group name="deer_small">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="65" />
+							<float name="avoid_any_spawn_distance" value="3" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="10" />
+						</group>
+						<group name="sheep_small">
+							<list name="accessible_spawns">
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.66" />
+									<float name="accessible_range_max" value="0.66" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="2" />
+									<float name="accessible_range_min" value="0.61" />
+									<float name="accessible_range_max" value="0.62" />
+								</group>
+							</list>
+							<int name="contested_base_spawn_count" value="4" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="105" />
+							<float name="avoid_any_spawn_distance" value="22" />
+							<float name="contested_range_min" value="0.48" />
+							<float name="contested_range_max" value="0.52" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="1" />
+						</group>
+						<group name="deer_large">
+							<list name="accessible_spawns">
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.74" />
+									<float name="accessible_range_max" value="0.74" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="1" />
+									<float name="accessible_range_min" value="0.61" />
+									<float name="accessible_range_max" value="0.61" />
+								</group>
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="105" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="3" />
+						</group>
+						<group name="settlements">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="0" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.5" />
+							<float name="contested_range_max" value="0.5" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="0" />
+						</group>
+						<group name="sheep_med">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="0" />
+							<float name="avoid_any_spawn_distance" value="0" />
+							<float name="contested_range_min" value="0.5" />
+							<float name="contested_range_max" value="0.5" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="0" />
+						</group>
+						<group name="sheep_large">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="0" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="0" />
+						</group>
+						<group name="boar_large">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="0" />
+							<float name="avoid_any_spawn_distance" value="0" />
+							<float name="contested_range_min" value="0" />
+							<float name="contested_range_max" value="0" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="0" />
+						</group>
+						<group name="boar_small">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="2" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="305" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.5" />
+							<float name="contested_range_max" value="0.5" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="4" />
+						</group>
+						<group name="relics">
+							<list name="accessible_spawns">
+							</list>
+							<int name="contested_base_spawn_count" value="0" />
+							<float name="contested_additional_spawns_per_player" value="0" />
+							<float name="avoid_same_spawn_distance" value="0" />
+							<float name="avoid_any_spawn_distance" value="15" />
+							<float name="contested_range_min" value="0.2" />
+							<float name="contested_range_max" value="0.8" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="0" />
+						</group>
+						<group name="fish_shore">
+							<list name="accessible_spawns">
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="12" />
+									<float name="accessible_range_min" value="0" />
+									<float name="accessible_range_max" value="1" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="12" />
+									<float name="accessible_range_min" value="1" />
+									<float name="accessible_range_max" value="1" />
+								</group>
+								<group name="accessible_spawn">
+									<int name="accessible_minimum_spawns_per_player" value="12" />
+									<float name="accessible_range_min" value="0" />
+									<float name="accessible_range_max" value="0" />
+								</group>
+							</list>
+							<int name="contested_base_spawn_count" value="12" />
+							<float name="contested_additional_spawns_per_player" value="12" />
+							<float name="avoid_same_spawn_distance" value="25" />
+							<float name="avoid_any_spawn_distance" value="1" />
+							<float name="contested_range_min" value="0" />
+							<float name="contested_range_max" value="1" />
+							<bool name="contested_excludes_starting_land_mass" value="False" />
+							<int name="spawn_priority" value="15" />
+						</group>
+					</enum_table>
+					<float name="player_start_influence_distance" value="4" />
+					<float name="player_resource_access_distance" value="300" />
+					<float name="solo_play_contested_area_start" value="0.5" />
+					<float name="solo_play_contested_area_end" value="0" />
+					<float name="contested_range_player" value="150" />
+					<float name="contested_range_neutral" value="100" />
+				</template_reference>
+				<instance_reference name="map_size" value="map_gen\map_gen_size\map_size_416" />
+				<template_reference name="map_size_terrain_smoothing" value="map_gen\map_gen_terrain_smoothing_params">
+					<template_reference name="fractal_shift_amplitude" value="map_gen\layout\coarse_map_blur_param">
+						<float name="standard_deviation" value="0" />
+						<float name="normalization_exponent_for_gaussian_kernel" value="1" />
+					</template_reference>
+					<template_reference name="fractal_shift_variance" value="map_gen\layout\coarse_map_blur_param">
+						<float name="standard_deviation" value="0" />
+						<float name="normalization_exponent_for_gaussian_kernel" value="1" />
+					</template_reference>
+					<template_reference name="fractal_shift_direction_bias" value="map_gen\layout\coarse_map_blur_param">
+						<float name="standard_deviation" value="0" />
+						<float name="normalization_exponent_for_gaussian_kernel" value="1" />
+					</template_reference>
+					<template_reference name="height_over_width" value="map_gen\layout\coarse_map_blur_param">
+						<float name="standard_deviation" value="0.78" />
+						<float name="normalization_exponent_for_gaussian_kernel" value="0.35" />
+					</template_reference>
+				</template_reference>
+			</group>
+		</list>
+	</group>
+</instance>
