@@ -1,0 +1,17 @@
+<instance description="local distribution data for trees" template="map_gen\distribution\local_distributions">
+	<uniqueid name="pbgid" value="6" />
+	<group name="local_distributions">
+		<list name="cell_distributions">
+			<instance_reference name="cell_distribution" value="map_gen\distribution\local_cell_distribution\local_cell_dist_gaia_bird_no_land" />
+			<instance_reference name="cell_distribution" value="map_gen\distribution\local_cell_distribution\local_cell_dist_gaia_sparrow" />
+		</list>
+		<list name="region_distributions">
+			<instance_reference name="region_distribution" value="map_gen\distribution\local_region_distribution\local_region_dist_classic_food_berries" />
+			<instance_reference name="region_distribution" value="map_gen\distribution\local_region_distribution\local_region_dist_classic_wood_loose" />
+			<instance_reference name="region_distribution" value="map_gen\distribution\local_region_distribution\local_region_dist_classic_gold_a" />
+			<instance_reference name="region_distribution" value="map_gen\distribution\local_region_distribution\local_region_dist_classic_stone_a" />
+			<instance_reference name="region_distribution" value="map_gen\distribution\local_region_distribution\local_region_dist_classic_food_berries_far" />
+			<instance_reference name="region_distribution" value="map_gen\distribution\local_region_distribution\local_region_dist_classic_food_deer_a_small" />
+		</list>
+	</group>
+</instance>

@@ -1,0 +1,18 @@
+<instance description="" template="map_gen\distribution\local_region_distribution">
+	<uniqueid name="pbgid" value="3" />
+	<group name="local_region_distribution">
+		<instance_reference name="distribution" value="map_gen\distribution\region_distribution\region_dist_gaia_sheep_med" />
+		<template_reference name="range_band" value="map_gen\distribution\range_band">
+			<float name="min_distance" value="54" />
+			<float name="max_distance" value="60" />
+		</template_reference>
+		<template_reference name="quantity" value="map_gen\distribution\quantity">
+			<int name="base_instance_count" value="0" />
+			<float name="additional_instances_per_km_squared" value="0" />
+			<float name="additional_instances_per_million_score" value="0" />
+			<int name="additional_instances_per_player" value="0" />
+			<float name="additional_instances_per_scored_km_squared" value="0" />
+			<float name="minimum_for_per_scored_km_squared" value="0.05" />
+		</template_reference>
+	</group>
+</instance>

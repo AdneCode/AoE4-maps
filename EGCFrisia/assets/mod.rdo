@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--EGCFrisia/-->
+	<DataObject Name="EGCFrisia" Type="Mod" Id="5801024406278467205" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">242564460721214846</DataValue>
+			<!--EGCFrisia/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="242564460721214846" OwnerId="5801024406278467205">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="749395086"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="2648217406"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2601874468"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1163969467"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">12378704797646597835</DataValue>
+			<!--EGCFrisia/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="12378704797646597835" OwnerId="5801024406278467205">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="749395086"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="2648217406"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2601874468"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1163969467"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+
