@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--beastymap/-->
+	<DataObject Name="beastymap" Type="Mod" Id="7847736553082720185" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">15877188174340494572</DataValue>
+			<!--beastymap/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="15877188174340494572" OwnerId="7847736553082720185">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="455670928"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="3978192737"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="4098965359"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1273114968"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">6460255576332847355</DataValue>
+			<!--beastymap/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="6460255576332847355" OwnerId="7847736553082720185">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="455670928"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="3978192737"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="4098965359"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1273114968"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

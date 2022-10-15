@@ -1,0 +1,22 @@
+<instance description="" template="map_gen\score_map\score_map">
+	<uniqueid name="pbgid" value="4" />
+	<group name="score_map">
+		<template_reference name="score_map_option" value="map_gen\score_map\option\filter_edge_of_map">
+			<template_reference name="input" value="map_gen\score_map\option\product">
+				<list name="inputs">
+					<template_reference name="input" value="map_gen\score_map\option\reference">
+						<instance_reference name="score_map" value="map_gen\score_map\score_map\start_position_avoidance" />
+					</template_reference>
+					<template_reference name="input" value="map_gen\score_map\option\reference">
+						<instance_reference name="score_map" value="map_gen\score_map\score_map\cliff-mountain-impass\impass\impass_requirement_reachable" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<bool name="filter_inner_instead_of_outer" value="True" />
+			<bool name="value_is_percent_instead_of_cells" value="False" />
+			<float name="from_edge_threshold" value="18" />
+			<float name="set_values_to" value="0" />
+			<bool name="playable_area_only" value="True" />
+		</template_reference>
+	</group>
+</instance>

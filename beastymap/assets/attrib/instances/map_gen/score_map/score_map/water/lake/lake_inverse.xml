@@ -1,0 +1,9 @@
+<instance description="" template="map_gen\score_map\score_map">
+	<uniqueid name="pbgid" value="5" />
+	<group name="score_map">
+		<template_reference name="score_map_option" value="map_gen\score_map\option\flip_min_max_normalized">
+			<template_reference name="input" value="map_gen\score_map\option\lake">
+			</template_reference>
+		</template_reference>
+	</group>
+</instance>
