@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--middlefocus/-->
+	<DataObject Name="middlefocus" Type="Mod" Id="7715059945024375486" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">17836138303649450305</DataValue>
+			<!--middlefocus/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="17836138303649450305" OwnerId="7715059945024375486">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="2069990533"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="2531890824"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="3077866858"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1336069765"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">3074143736315232751</DataValue>
+			<!--middlefocus/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="3074143736315232751" OwnerId="7715059945024375486">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="2069990533"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="2531890824"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="3077866858"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1336069765"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+
