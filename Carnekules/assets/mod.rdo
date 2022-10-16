@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--Carnekules/-->
+	<DataObject Name="Carnekules" Type="Mod" Id="15173905870452472190" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">3537762387150235576</DataValue>
+			<!--Carnekules/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="3537762387150235576" OwnerId="15173905870452472190">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="1114391217"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="704517984"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="1158575780"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1109932239"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">9694243457363308696</DataValue>
+			<!--Carnekules/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="9694243457363308696" OwnerId="15173905870452472190">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="1114391217"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="704517984"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="1158575780"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1109932239"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+
